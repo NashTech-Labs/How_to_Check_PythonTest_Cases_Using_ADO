@@ -12,5 +12,5 @@ As you can see in the below image when we run the Python test cases this will cr
 
 It is also showing the report and showing how many test cases pass/fail 
 
-![pytest-ado.png](pytest-ado/pytest-ado.png)
+![pytest-ado.png](photo/pytest-ado.png)
 
