@@ -1,0 +1,25 @@
+trigger: 
+- master
+
+pool: Harshit-pool
+
+steps:
+
+- script: |
+      echo "-----Current Directory------" 
+      pwd
+      ls
+  displayName: 'Checking Current Directory'
+
+
+- script: |
+       pip install pytest pytest-azurepipelines
+  continueOnError: False
+  displayName: 'Install Dependencies for Python test'
+
+
+- script: |
+      echo "Report of  the Pytest"
+      pwd 
+      pytest
+  displayName: 'Running pytest '
